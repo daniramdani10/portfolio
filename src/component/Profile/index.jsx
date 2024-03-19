@@ -17,7 +17,7 @@ import ListData from "./ListData";
 
 const Profile = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-2 lg:gap-7 pb-7 px-7 md:px-40 items-center rounded-md shadow-md h-auto dark:bg-[#24292F] dark:text-white">
+    <div className="flex flex-col lg:flex-row gap-2 lg:gap-7 pb-7 px-7 md:px-40 items-center rounded-md h-auto dark:bg-[#24292F] dark:text-white">
       <div className="flex flex-col items-center gap-2">
         <ProfileImage />
         <ListSocial>Front-end Developer</ListSocial>
@@ -52,7 +52,7 @@ const Profile = () => {
             <Calendar size={20} color="#1773EA" />
           </ListData>
         </div>
-        <button className="flex items-center gap-3 bg-[#238636] px-5 py-2 w-max text-white rounded-md m-2 text-xs dark:bg-[#238636] dark:text-white">
+        <button className="flex items-center gap-3 bg-[#238636] px-5 py-2 w-max text-white rounded-md mt-2 text-xs dark:bg-[#238636] dark:text-white">
           <DownloadSimple size={24} color="white" />
           Download CV
         </button>

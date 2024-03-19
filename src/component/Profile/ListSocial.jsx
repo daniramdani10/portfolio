@@ -4,7 +4,7 @@ const ListSocial = ({ link, children }) => {
   return (
     <a
       href={link}
-      className="text-xs bg-slate-50 px-3 py-2 rounded-md dark:bg-[#333B43] dark:text-white"
+      className="text-xs bg-slate-50 px-3 py-2 rounded-md dark:bg-[#333B43] dark:text-white hover:scale-110"
     >
       {/* <InstagramLogo size={20} /> */}
       {children}

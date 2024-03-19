@@ -1,5 +1,23 @@
+import { useState } from "react";
+
+import DarkMode from "./component/DarkMode";
+import Profile from "./component/Profile";
+
 function App() {
-  return <h1 className="text-3xl font-bold">Initial project portfolio</h1>;
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toogleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  return (
+    <div className={`${darkMode && "dark"} `}>
+      <div className="dark:bg-[#24292F] dark:text-white">
+        <DarkMode toogleDarkMode={toogleDarkMode} darkMode={darkMode} />
+        <Profile />
+      </div>
+    </div>
+  );
 }
 
 export default App;
